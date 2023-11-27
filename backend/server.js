@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({limit: "10mb", extended:true}))
 app.use(cookieParser())
 app.use("/api/users", userRoutes)
 app.use("/api/posts",  postRoutes)   
-app.use(cors())
+// app.use(cors())
 
 const corsOptions = {
     origin: 'https://serene-alfajores-332ec5.netlify.app/',

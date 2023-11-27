@@ -16,6 +16,12 @@ dotenv.config()
 const PORT = process.env.PORT || 5000
 const app = express()  
 
+const corsOptions = {
+    origin: 'https://serene-alfajores-332ec5.netlify.app',
+  };
+  
+  app.use(cors(corsOptions));
+
 
 
 connectDb()     
@@ -28,11 +34,7 @@ app.use("/api/users", userRoutes)
 app.use("/api/posts",  postRoutes)   
 // app.use(cors())
 
-const corsOptions = {
-    origin: 'https://serene-alfajores-332ec5.netlify.app/',
-  };
-  
-  app.use(cors(corsOptions));
+
 
 
 

@@ -18,6 +18,7 @@ const app = express()
 
 const corsOptions = {
     origin: 'https://serene-alfajores-332ec5.netlify.app',
+    methods: 'GET,PUT,PATCH,POST,DELETE',
   };
   
   app.use(cors(corsOptions));

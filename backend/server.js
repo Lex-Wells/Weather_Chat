@@ -28,6 +28,12 @@ app.use("/api/users", userRoutes)
 app.use("/api/posts",  postRoutes)   
 app.use(cors())
 
+const corsOptions = {
+    origin: 'https://serene-alfajores-332ec5.netlify.app',
+  };
+  
+  app.use(cors(corsOptions));
+
 
 
 

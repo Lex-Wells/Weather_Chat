@@ -2,9 +2,7 @@ import React, {  useEffect, useState} from 'react'
 import logo from "../pics/logo.png"
 import axios from 'axios'
 import {useSelector, useDispatch } from 'react-redux'
-import {getWeather} from "../features/weatherActions/weatherSlice"
-import {AiOutlineArrowDown } from 'react-icons/Ai'; 
-import { Link } from 'react-router-dom'
+import {getWeather} from "../features/weatherActions/weatherSlice" 
 import { useNavigate } from 'react-router-dom'
 import { logout } from '../features/weatherActions/authSlice'
 import {clearPost} from "../features/weatherActions/postSlice"

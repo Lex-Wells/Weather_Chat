@@ -21,12 +21,16 @@ const app = express()
 //     methods: 'GET,PUT,POST,DELETE',
 //   };
 const corsOptions = {
-    origin: 'https://frolicking-sherbet-1b5c30.netlify.app/',
+    origin: 'https://inquisitive-axolotl-010876.netlify.app',
     methods: 'GET,PUT,POST,DELETE',
   };
+// const corsOptions = {
+//     origin: 'https://frolicking-sherbet-1b5c30.netlify.app/',
+//     methods: 'GET,PUT,POST,DELETE',
+//   };
   
   app.use(cors(corsOptions));
-  app.use(cors())
+//   app.use(cors())
 
 connectDb()     
 app.use(express.json())

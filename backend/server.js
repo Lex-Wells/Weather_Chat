@@ -16,18 +16,11 @@ dotenv.config()
 const PORT = process.env.PORT || 5000
 const app = express()  
 
-// const corsOptions = {
-//     origin: 'https://serene-alfajores-332ec5.netlify.app',
-//     methods: 'GET,PUT,POST,DELETE',
-//   };
 const corsOptions = {
-    origin: 'https://inquisitive-axolotl-010876.netlify.app',
+    origin: 'https://quiet-daffodil-25f6c7.netlify.app',
     methods: 'GET,PUT,POST,DELETE',
   };
-// const corsOptions = {
-//     origin: 'https://frolicking-sherbet-1b5c30.netlify.app/',
-//     methods: 'GET,PUT,POST,DELETE',
-//   };
+
   
   app.use(cors(corsOptions));
 //   app.use(cors())
